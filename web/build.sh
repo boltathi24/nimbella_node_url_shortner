@@ -1,4 +1,4 @@
-cd npm install
+npm install
 
 if [[ -e ../.env ]]; then
  cp ../.env .env.production
