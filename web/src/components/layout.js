@@ -66,15 +66,15 @@ class Shortner extends Component {
     let error
     if (this.state.linkvalid) {
 
-      error = <label className="labelerror">Please enter valid url</label>
+      error = <label className="labelerror">Please enter a valid url</label>
 
     } 
     return (
       <div>
         <textarea class="textboxHeight" type="url" required pattern="^(http|https)://\.(.*)" className="textboxHeight"onChange={ this.setUrl } placeholder="paste the link to shorten.."/><br></br> <br></br>
-       <input type="button" className="button" value="submit" onClick={this.handleClick}></input><br></br><br></br>
+       <input type="button" className="button" value="submit" onClick={this.handleClick}></input><br></br>
        {error}<br></br>
-       {header}<br></br><br></br>
+       {header}<br></br>
        
        <a className="resultTextArea" href={ this.state.shorten_url_response} target="_blank" rel="noopener noreferrer">{ this.state.shorten_url_response}</a>
       </div>

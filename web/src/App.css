@@ -22,10 +22,16 @@
 {
   width: 360px;
 }
+
+}
+
+@media screen and (max-width: 640px)
+{
 .resultTextArea
 {
   width: 360px;
 }
+
 }
 @media screen and (min-width: 768px)
 {
@@ -33,10 +39,16 @@
 {
   width: 720px;
 }
+
+}
+
+@media screen and (min-width: 768px)
+{
 .resultTextArea
 {
-  width: 360px;
+  width: 720px;
 }
+
 }
 
 .App-header {
@@ -58,7 +70,7 @@
   border:none;
   text-align: justify-all ;
  
-    height:120px; font-size:10pt;
+    height:120px; font-size:12pt;
   
   
 }
@@ -66,7 +78,7 @@
 
 .resultTextArea{
 
-  height:120px; font-size:10pt;
+  height:120px; font-size:12pt;
   display:inline-block;
   opacity: 100;
   background-color: #050911;color:#fff;
@@ -82,6 +94,7 @@
   border-radius: 5px;
   border: 0;
   width: 80px;
+  font-size: 12pt;
   height:25px;
   font-family: Tahoma;
   background: #0e3791;
@@ -95,11 +108,11 @@
 
 .labelclass
 {
-  font-size:10pt;
+  font-size:12pt;
 }
 .labelerror
 {
-  font-size:10pt;
+  font-size:12pt;
   color:red
 }
 
