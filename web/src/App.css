@@ -16,10 +16,32 @@
   }
 }
 
+@media screen and (max-width: 640px)
+{
+.textboxHeight
+{
+  width: 360px;
+}
+.resultTextArea
+{
+  width: 360px;
+}
+}
+@media screen and (min-width: 768px)
+{
+.textboxHeight
+{
+  width: 720px;
+}
+.resultTextArea
+{
+  width: 360px;
+}
+}
 
 .App-header {
   background-color: #050b16;
-  min-height: 95vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,27 +51,56 @@
   border:none
 }
 .textboxHeight{
-  height:120px;width: 800px; font-size:12pt;  
   display:inline-block;
   vertical-align:center;
   resize: none;
   word-wrap:anywhere ;
   border:none;
+  text-align: justify-all ;
+ 
+    height:120px; font-size:10pt;
   
   
 }
+
+
 .resultTextArea{
-  height:120px;width: 700px; font-size:12pt;  
+
+  height:120px; font-size:10pt;
   display:inline-block;
   opacity: 100;
-  background-color: #050911;;color:#fff;
+  background-color: #050911;color:#fff;
   vertical-align:middle;
   border:none;
-  text-align: justify-all 
+  text-align: justify-all ;
+  
+  
+ 
 }
+.button
+{
+  border-radius: 5px;
+  border: 0;
+  width: 80px;
+  height:25px;
+  font-family: Tahoma;
+  background: #0e3791;
+  width: 120px;
+  height: 40px;
+  color: white;
+
+
+}
+
+
 .labelclass
 {
-  font-size:12pt;
+  font-size:10pt;
+}
+.labelerror
+{
+  font-size:10pt;
+  color:red
 }
 
 
@@ -68,3 +119,4 @@
 
   
 }
+
