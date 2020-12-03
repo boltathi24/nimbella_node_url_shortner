@@ -30,9 +30,8 @@ class Shortner extends Component {
     }
 
        setData() {
-         console.log(process.env.BASE_URL)
          
-    axios.post("https://pathitha-4mpb1smu66t-apigcp.nimbella.io/api/s/url", {actual_url:this.state.actual_url},{ headers: {'content-type': 'application/json'}})
+    axios.post("https://"+window.location.hostname+"/api/s/url", {actual_url:this.state.actual_url},{ headers: {'content-type': 'application/json'}})
         .then(response => this.setState({ shorten_url_response: response.data.short_url }));
     }
 
